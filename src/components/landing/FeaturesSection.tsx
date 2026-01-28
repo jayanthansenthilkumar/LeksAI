@@ -4,45 +4,48 @@ const features = [
   {
     icon: Focus,
     title: "Real-Time Focus Assistance",
-    description: "AI-powered insights help you maintain deep work while minimizing distractions throughout your day."
+    description: "AI-powered insights help you maintain deep work while minimizing distractions."
   },
   {
     icon: Fingerprint,
     title: "Behavior-Based Anomaly Detection",
-    description: "Identifies unusual patterns that may indicate compromised accounts or insider threats—without watching what you type."
+    description: "Identifies unusual patterns without watching what you type or view."
   },
   {
     icon: ShieldCheck,
     title: "Continuous Authentication",
-    description: "Silently verifies it's really you based on how you work, adding an invisible layer of security."
+    description: "Silently verifies it's really you based on how you work."
   },
   {
     icon: Lock,
     title: "Data Protection Without Access",
-    description: "Protects sensitive information by understanding context and risk—never by reading your content."
+    description: "Protects sensitive information by understanding context, not content."
   },
   {
     icon: Bell,
     title: "Gentle, Non-Intrusive Alerts",
-    description: "Calm notifications that inform without alarming. No red warnings or panic-inducing popups."
+    description: "Calm notifications that inform without alarming or disrupting."
   },
   {
     icon: RefreshCw,
     title: "Automatic Session Recovery",
-    description: "If something goes wrong, SentriQ quietly handles it. Your workflow continues uninterrupted."
+    description: "If something goes wrong, SentriQ handles it quietly."
   }
 ];
 
 const FeaturesSection = () => {
   return (
-    <section id="features" className="py-24 bg-card">
+    <section id="features" className="py-24 bg-card border-y border-border/50">
       <div className="container mx-auto px-6">
+        <div className="text-center mb-4">
+          <span className="text-primary font-mono text-sm">The "What"</span>
+        </div>
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Features Built for Trust
+            Adaptive Intelligence
           </h2>
           <p className="text-lg text-muted-foreground">
-            Every feature is designed with one principle: protect you without invading your privacy.
+            The differentiator that separates signal from noise.
           </p>
         </div>
 
@@ -50,9 +53,9 @@ const FeaturesSection = () => {
           {features.map((feature, index) => (
             <div 
               key={index}
-              className="group p-8 rounded-2xl bg-background border border-border/50 card-shadow hover:card-shadow-hover hover:-translate-y-1 transition-all duration-300"
+              className="group p-8 rounded-2xl bg-background border border-border/50 hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 gradient-border"
             >
-              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center mb-5 group-hover:from-primary/20 group-hover:to-secondary/20 transition-colors">
+              <div className="w-14 h-14 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
                 <feature.icon className="w-7 h-7 text-primary" />
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-3">
