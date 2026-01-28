@@ -4,7 +4,7 @@ const privacyFeatures = [
   {
     icon: VideoOff,
     title: "No Screen Recording",
-    description: "Your screen is your private workspace. SentriQ never captures, stores, or transmits visual content."
+    description: "Your screen is your private workspace. We never capture, store, or transmit visual content."
   },
   {
     icon: KeyboardOff,
@@ -18,8 +18,8 @@ const privacyFeatures = [
   },
   {
     icon: Eye,
-    title: "Transparent & Explainable",
-    description: "Every action SentriQ takes is logged and explainable. You always know what's happening and why."
+    title: "Transparent Actions",
+    description: "Every action SentriQ takes is logged and explainable. You always know what's happening."
   }
 ];
 
@@ -28,9 +28,9 @@ const PrivacySection = () => {
     <section className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="rounded-3xl bg-gradient-to-br from-primary/5 via-card to-secondary/5 border border-border/50 p-8 sm:p-12 lg:p-16">
+          <div className="rounded-3xl bg-card border border-border/50 p-8 sm:p-12 lg:p-16 card-glow gradient-border">
             <div className="text-center mb-12">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 text-secondary text-sm font-medium mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
                 <Eye className="w-4 h-4" />
                 Our Privacy Promise
               </div>
@@ -47,10 +47,10 @@ const PrivacySection = () => {
               {privacyFeatures.map((feature, index) => (
                 <div 
                   key={index}
-                  className="flex items-start gap-4 p-6 rounded-2xl bg-card/50 backdrop-blur-sm border border-border/30"
+                  className="flex items-start gap-4 p-6 rounded-2xl bg-background/50 border border-border/30 hover:border-primary/30 transition-colors"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0">
-                    <feature.icon className="w-6 h-6 text-secondary" />
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center flex-shrink-0">
+                    <feature.icon className="w-6 h-6 text-primary" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-foreground mb-1">
