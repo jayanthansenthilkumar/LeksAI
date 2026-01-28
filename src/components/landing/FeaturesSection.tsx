@@ -41,7 +41,7 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section id="features" className="py-24 bg-card border-y border-border/50">
+    <section id="features" className="py-24 bg-muted/30 border-y border-border/50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-4">
           <span className="text-primary font-mono text-sm">The "What"</span>
@@ -59,7 +59,7 @@ const FeaturesSection = () => {
           {features.map((feature, index) => (
             <div 
               key={index}
-              className="group p-8 rounded-2xl bg-background border border-border/50 hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 gradient-border"
+              className="group p-8 rounded-2xl bg-card border border-border/50 hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 gradient-border"
             >
               <div className="w-14 h-14 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
                 <feature.icon className="w-7 h-7 text-primary" />

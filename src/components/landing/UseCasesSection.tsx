@@ -29,7 +29,7 @@ const useCases = [
 
 const UseCasesSection = () => {
   return (
-    <section id="use-cases" className="py-24 bg-card border-y border-border/50">
+    <section id="use-cases" className="py-24 bg-muted/30 border-y border-border/50">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
@@ -44,7 +44,7 @@ const UseCasesSection = () => {
           {useCases.map((useCase, index) => (
             <div 
               key={index}
-              className="group relative p-8 rounded-2xl bg-background border border-border/50 hover:border-primary/30 transition-all duration-300 gradient-border"
+              className="group relative p-8 rounded-2xl bg-card border border-border/50 hover:border-primary/30 transition-all duration-300 gradient-border"
             >
               <div className="flex items-center justify-between mb-4">
                 <div className="w-14 h-14 rounded-2xl bg-muted flex items-center justify-center group-hover:bg-primary/10 transition-colors">

@@ -25,7 +25,7 @@ const problems = [
 
 const ProblemSection = () => {
   return (
-    <section className="py-24 bg-card border-y border-border/50">
+    <section className="py-24 bg-muted/30 border-y border-border/50">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
@@ -41,7 +41,7 @@ const ProblemSection = () => {
           {problems.map((problem, index) => (
             <div 
               key={index}
-              className="group p-6 rounded-2xl bg-background border border-border/50 hover:border-primary/30 transition-all duration-300 gradient-border"
+              className="group p-6 rounded-2xl bg-card border border-border/50 hover:border-primary/30 transition-all duration-300 gradient-border"
             >
               <div className="w-12 h-12 rounded-xl bg-muted flex items-center justify-center mb-4 group-hover:bg-primary/10 transition-colors">
                 <problem.icon className="w-6 h-6 text-muted-foreground group-hover:text-primary transition-colors" />

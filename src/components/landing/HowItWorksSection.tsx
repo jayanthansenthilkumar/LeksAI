@@ -45,7 +45,7 @@ const HowItWorksSection = () => {
             {steps.map((step, index) => (
               <div 
                 key={index}
-                className="relative p-8 rounded-2xl bg-card border border-border/50 hover:border-primary/30 transition-all duration-300 group gradient-border"
+                className="relative p-8 rounded-2xl bg-muted/20 border border-border/50 hover:border-primary/30 transition-all duration-300 group gradient-border"
               >
                 <div className="absolute top-6 right-6 font-mono text-4xl font-bold text-muted/20 group-hover:text-primary/20 transition-colors">
                   {step.number}
