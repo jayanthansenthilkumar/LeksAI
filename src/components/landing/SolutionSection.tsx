@@ -14,14 +14,14 @@ const SolutionSection = () => {
               </div>
               
               <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6 leading-tight">
-                Security That Works
+                One System, Dual Intelligence:
                 <br />
-                <span className="text-gradient">Quietly in the Background</span>
+                <span className="text-gradient">Productivity + Cyber Security</span>
               </h2>
               
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                SentriQ understands how you work—not what you work on. By analyzing behavioral patterns 
-                rather than content, we protect you from threats without ever compromising your privacy.
+                SentriQ learns how you work—login times, typing rhythm, app switching, task habits—then uses 
+                the same behavioral data to boost efficiency AND detect threats. No spying. No content reading.
               </p>
 
               <div className="space-y-5">
@@ -30,9 +30,9 @@ const SolutionSection = () => {
                     <Eye className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1">Behavior-Based Detection</h4>
+                    <h4 className="font-semibold text-foreground mb-1">Real-Time Behavior Intelligence</h4>
                     <p className="text-muted-foreground text-sm">
-                      Learns your natural work patterns to identify anomalies without reading your files.
+                      Learns normal patterns: login times, typing rhythm, app flow, task habits. Only signals, not content.
                     </p>
                   </div>
                 </div>
@@ -42,9 +42,9 @@ const SolutionSection = () => {
                     <Shield className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1">Privacy by Design</h4>
+                    <h4 className="font-semibold text-foreground mb-1">Instant Threat Detection</h4>
                     <p className="text-muted-foreground text-sm">
-                      Zero content access. No screen recording. No keystroke logging.
+                      Spots account takeover, session hijacking, insider threats, and bot activity—before damage occurs.
                     </p>
                   </div>
                 </div>
@@ -54,9 +54,9 @@ const SolutionSection = () => {
                     <Heart className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1">Calm Protection</h4>
+                    <h4 className="font-semibold text-foreground mb-1">Smart Response Engine</h4>
                     <p className="text-muted-foreground text-sm">
-                      Gentle alerts and automatic recovery. No panic-inducing warnings.
+                      Silent re-auth, session locks, data masking, admin alerts—all automatic. No panic, no disruption.
                     </p>
                   </div>
                 </div>

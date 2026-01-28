@@ -3,27 +3,27 @@ import { TrendingUp, ShieldCheck, Users, Smile } from "lucide-react";
 const benefits = [
   {
     icon: TrendingUp,
-    stat: "40%",
-    title: "Increased Productivity",
-    description: "Teams report significantly improved focus and fewer interruptions."
+    stat: "Daily",
+    title: "Real-Time Value",
+    description: "Continuous productivity boost and threat detection—not batch analysis."
   },
   {
     icon: ShieldCheck,
-    stat: "85%",
-    title: "Reduced Incidents",
-    description: "Early detection prevents most breaches before damage occurs."
+    stat: "Instant",
+    title: "Acts Immediately",
+    description: "Security responds before damage occurs. No waiting for logs or alerts."
   },
   {
     icon: Users,
-    stat: "92%",
-    title: "Employee Trust",
-    description: "Workers feel respected when security respects privacy."
+    stat: "100%",
+    title: "High Trust, Low Friction",
+    description: "No content access. No spying. Only behavioral signals. Privacy-first by design."
   },
   {
     icon: Smile,
-    stat: "3x",
-    title: "Lower Stress",
-    description: "Calm security reduces workplace anxiety significantly."
+    stat: "AI",
+    title: "Improves Over Time",
+    description: "Machine learning adapts to your team's unique patterns for better accuracy."
   }
 ];
 
@@ -36,10 +36,10 @@ const BenefitsSection = () => {
         </div>
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            High-Frequency <span className="text-gradient">Monitoring</span>
+            Why This Idea Is <span className="text-gradient">Strong</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            We don't just track threats. We detect subtle shifts in behavior before they become problems.
+            Real-time value meets security-first design. Old-school principle, modern execution.
           </p>
         </div>
 

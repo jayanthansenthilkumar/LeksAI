@@ -3,23 +3,23 @@ import { Brain, ShieldAlert, Clock, AlertTriangle } from "lucide-react";
 const problems = [
   {
     icon: Brain,
-    title: "Digital Overwhelm",
-    description: "Constant notifications and context-switching drain focus and creativity throughout the workday."
+    title: "10+ Apps, Constant Juggling",
+    description: "Users lose focus switching between tools, logins, and devices—productivity suffers silently."
   },
   {
     icon: Clock,
-    title: "Productivity Burnout",
-    description: "The pressure to always be connected leads to exhaustion and decreased performance over time."
+    title: "Security Tools Are Reactive",
+    description: "Traditional systems detect threats after damage is done. Logs → analysis → alerts = too late."
   },
   {
     icon: ShieldAlert,
-    title: "Hidden Cyber Risks",
-    description: "Remote work expands attack surfaces while employees remain unaware of subtle security threats."
+    title: "Productivity vs. Security",
+    description: "Productivity tools ignore cyber risks. Cyber tools ignore human behavior. The gap is costly."
   },
   {
     icon: AlertTriangle,
-    title: "Intrusive Security Tools",
-    description: "Traditional monitoring software creates distrust and anxiety, making employees feel surveilled."
+    title: "Silent Breaches + Burnout",
+    description: "Account takeovers and insider threats go unnoticed while employees experience constant pressure."
   }
 ];
 
@@ -29,11 +29,11 @@ const ProblemSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            The Modern Work Dilemma
+            The Productivity-Security Gap
           </h2>
           <p className="text-lg text-muted-foreground">
-            Today's digital workplace creates an impossible choice: productivity or security. 
-            But it doesn't have to be this way.
+            Productivity loss + silent breaches + burnout + delayed detection. 
+            SentriQ merges productivity intelligence and cyber intelligence into one real-time system.
           </p>
         </div>
 

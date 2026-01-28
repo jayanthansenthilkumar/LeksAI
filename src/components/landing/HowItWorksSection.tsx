@@ -4,26 +4,26 @@ const steps = [
   {
     number: "01",
     icon: Eye,
-    title: "Enter Your Workflow",
-    description: "SentriQ seamlessly integrates with your existing tools. No configuration, no disruption."
+    title: "Real-Time Behavior Observation",
+    description: "SentriQ learns normal patterns: login times, device usage, typing rhythm, app switching, task habits. No spying. No content reading."
   },
   {
     number: "02",
     icon: Brain,
-    title: "Semantic Analysis",
-    description: "Our AI learns your behavioral patterns—not your content. It understands rhythm, not words."
+    title: "AI Productivity Intelligence",
+    description: "Detects distraction loops, reorders tasks dynamically, suggests focus windows, auto-summarizes sessions, and flags overload."
   },
   {
     number: "03",
     icon: Shield,
-    title: "Silent Protection",
-    description: "When behavior deviates, threats are identified and handled without interrupting your flow."
+    title: "Embedded Cyber Security Intelligence",
+    description: "The same behavior data detects threats: account takeover, session hijacking, insider misuse, credential sharing, bot activity."
   },
   {
     number: "04",
     icon: Heart,
-    title: "Calm Alerts",
-    description: "Only meaningful changes trigger gentle notifications. No noise, no false alarms."
+    title: "Real-Time Response Engine",
+    description: "Silent re-authentication, session locks, data masking, admin alerts, safe next-action recommendations. Security feels invisible."
   }
 ];
 
@@ -33,10 +33,10 @@ const HowItWorksSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            How it Works
+            Simple but Powerful Flow
           </h2>
           <p className="text-lg text-muted-foreground">
-            Automated intelligence gathering that runs 24/7.
+            From observation to protection—all in real-time, all invisible.
           </p>
         </div>
 

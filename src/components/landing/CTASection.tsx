@@ -23,14 +23,14 @@ const CTASection = () => {
               </div>
 
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-                Protect Productivity
+                Observe. Guide. Protect.
                 <br />
-                <span className="text-gradient">Without Pressure</span>
+                <span className="text-gradient">Act Instantly.</span>
               </h2>
 
               <p className="text-lg text-muted-foreground max-w-xl mx-auto mb-10">
-                Join organizations that trust SentriQ to keep their teams safe, focused, 
-                and respected. Start your journey to calm security today.
+                Join the future of work where productivity and security aren't trade-offs—they're teammates. 
+                Start your journey to scalable, unbiased supervision today.
               </p>
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">

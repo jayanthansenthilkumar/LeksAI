@@ -1,35 +1,41 @@
-import { Focus, Fingerprint, ShieldCheck, Lock, Bell, RefreshCw } from "lucide-react";
+import { Focus, Brain, Fingerprint, ShieldCheck, Lock, AlertTriangle } from "lucide-react";
 
 const features = [
   {
     icon: Focus,
-    title: "Real-Time Focus Assistance",
-    description: "AI-powered insights help you maintain deep work while minimizing distractions."
+    title: "Live Task Prioritization",
+    description: "AI reorders your work dynamically based on behavior patterns and deadlines.",
+    category: "productivity"
+  },
+  {
+    icon: Brain,
+    title: "Smart Focus Nudges",
+    description: "Detects distraction loops and suggests focus windows to maximize deep work.",
+    category: "productivity"
+  },
+  {
+    icon: AlertTriangle,
+    title: "Burnout & Fatigue Alerts",
+    description: "Flags overload and recommends breaks before productivity crashes.",
+    category: "productivity"
   },
   {
     icon: Fingerprint,
-    title: "Behavior-Based Anomaly Detection",
-    description: "Identifies unusual patterns without watching what you type or view."
+    title: "Behavioral Anomaly Detection (UEBA)",
+    description: "Identifies account takeover, session hijacking, and insider threats instantly.",
+    category: "security"
   },
   {
     icon: ShieldCheck,
-    title: "Continuous Authentication",
-    description: "Silently verifies it's really you based on how you work."
+    title: "Zero-Trust Continuous Auth",
+    description: "Silently verifies identity based on behavior—no constant password prompts.",
+    category: "security"
   },
   {
     icon: Lock,
-    title: "Data Protection Without Access",
-    description: "Protects sensitive information by understanding context, not content."
-  },
-  {
-    icon: Bell,
-    title: "Gentle, Non-Intrusive Alerts",
-    description: "Calm notifications that inform without alarming or disrupting."
-  },
-  {
-    icon: RefreshCw,
-    title: "Automatic Session Recovery",
-    description: "If something goes wrong, SentriQ handles it quietly."
+    title: "Real-Time Data Leak Prevention",
+    description: "Monitors behavioral signals to prevent unauthorized data access and exfiltration.",
+    category: "security"
   }
 ];
 
@@ -42,10 +48,10 @@ const FeaturesSection = () => {
         </div>
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Adaptive Intelligence
+            Product + Security Combined
           </h2>
           <p className="text-lg text-muted-foreground">
-            The differentiator that separates signal from noise.
+            One system that improves your workflow while protecting your trust.
           </p>
         </div>
 

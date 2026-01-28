@@ -17,13 +17,14 @@ const HeroSection = () => {
           {/* Left content */}
           <div className="animate-fade-up">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-foreground leading-[1.1] mb-6">
-              The AI Shield that turns{" "}
-              <span className="text-gradient">behavior patterns</span>
-              {" "}into invisible protection.
+              Your Digital Conscience:{" "}
+              <span className="text-gradient">Boost Productivity</span>
+              {" "}& Protect Trust
             </h1>
 
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed max-w-lg">
-              Stop worrying about cyber threats. Get real-time security that protects your work silently—without watching what you do.
+              Real-time AI that improves focus and efficiency while silently guarding against cyber threats. 
+              Watches how you work—not what you work on.
             </p>
 
             {/* Email signup */}
@@ -43,15 +44,15 @@ const HeroSection = () => {
             <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <Check className="w-4 h-4 text-primary" />
-                <span>No screen recording</span>
+                <span>Behavior-only monitoring</span>
               </div>
               <div className="flex items-center gap-2">
                 <Check className="w-4 h-4 text-primary" />
-                <span>No content scanning</span>
+                <span>Real-time protection</span>
               </div>
               <div className="flex items-center gap-2">
                 <Check className="w-4 h-4 text-primary" />
-                <span>Privacy by design</span>
+                <span>Acts instantly</span>
               </div>
             </div>
           </div>

@@ -1,29 +1,29 @@
-import { Home, GraduationCap, UserX, Briefcase } from "lucide-react";
+import { Briefcase, GraduationCap, Building2, HeartPulse } from "lucide-react";
 
 const useCases = [
   {
-    icon: Home,
-    title: "Remote Work Security",
-    description: "Protect distributed teams without installing invasive monitoring software.",
+    icon: Briefcase,
+    title: "Enterprises & Startups",
+    description: "Secure remote workforce, prevent insider threats, improve team output without micromanagement.",
     tag: "Teams"
   },
   {
     icon: GraduationCap,
-    title: "Secure Online Learning",
-    description: "Keep students safe during virtual sessions without recording or watching.",
+    title: "Educational Institutions",
+    description: "Protect student systems, prevent exam & identity fraud, improve learning discipline.",
     tag: "Education"
   },
   {
-    icon: UserX,
-    title: "Insider Threat Prevention",
-    description: "Detect compromised accounts before damage occurs—without suspicion.",
-    tag: "Enterprise"
+    icon: HeartPulse,
+    title: "Healthcare",
+    description: "Secure sensitive patient data, prevent unauthorized access, maintain HIPAA compliance effortlessly.",
+    tag: "Healthcare"
   },
   {
-    icon: Briefcase,
-    title: "Sensitive Role Protection",
-    description: "Extra security for executives and data handlers without friction.",
-    tag: "High-Security"
+    icon: Building2,
+    title: "Finance & Banking",
+    description: "Protect financial data, detect insider trading attempts, ensure regulatory compliance.",
+    tag: "Finance"
   }
 ];
 
@@ -33,10 +33,10 @@ const UseCasesSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            SentriQ Adapts to Your World
+            Who Benefits
           </h2>
           <p className="text-lg text-muted-foreground">
-            From remote teams to high-security environments, calm protection wherever work happens.
+            Horizontal value with vertical depth. From startups to healthcare to finance.
           </p>
         </div>
 

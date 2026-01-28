@@ -7,8 +7,10 @@ const Navbar = () => {
       {/* Top banner */}
       <div className="bg-primary/10 border-b border-primary/20 py-2">
         <div className="container mx-auto px-6 flex items-center justify-center gap-2">
-          <Sparkles className="w-4 h-4 text-primary" />
-          <span className="text-sm text-primary font-medium">Privacy-first security for the modern workplace</span>
+          <Sparkles className="w-4 h-4 text-primary flex-shrink-0" />
+          <span className="text-xs sm:text-sm text-primary font-medium text-center">
+            Real-time AI productivity + cybersecurity in one system
+          </span>
         </div>
       </div>
       
@@ -20,7 +22,7 @@ const Navbar = () => {
           <span className="text-xl font-bold text-foreground">SentriQ</span>
         </a>
         
-        <div className="hidden md:flex items-center gap-8">
+        {/* <div className="hidden md:flex items-center gap-8">
           <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium">Features</a>
           <a href="#how-it-works" className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium">How It Works</a>
           <a href="#benefits" className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium">Benefits</a>
@@ -34,10 +36,9 @@ const Navbar = () => {
           <Button variant="hero" size="sm">
             Get Started
           </Button>
-        </div>
+        </div> */}
       </div>
     </nav>
   );
 };
-
 export default Navbar;
