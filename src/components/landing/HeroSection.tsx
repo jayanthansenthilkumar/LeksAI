@@ -78,94 +78,35 @@ const HeroSection = () => {
           </div>
 
           {/* Right visual - Enhanced Code block */}
-          <div className="animate-fade-up-delayed relative perspective-1000">
-            {/* Decorative background for card */}
-            <div className="absolute -inset-4 bg-gradient-to-r from-primary/30 to-indigo-500/30 rounded-[2rem] blur-2xl opacity-50 animate-pulse-gentle" />
+{/* Right visual - Simple Abstract Shield */}
+          <div className="relative flex items-center justify-center py-10 lg:py-0">
+            {/* Background Glow */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
             
-            <div className="relative bg-[#0A0A0B]/90 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/5 transform hover:rotate-1 transition-transform duration-500">
-              {/* Window header */}
-              <div className="flex items-center justify-between px-6 py-4 border-b border-white/5 bg-white/5">
-                <div className="flex gap-2">
-                  <div className="w-3 h-3 rounded-full bg-[#FF5F56]" />
-                  <div className="w-3 h-3 rounded-full bg-[#FFBD2E]" />
-                  <div className="w-3 h-3 rounded-full bg-[#27C93F]" />
-                </div>
-                <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-black/40 border border-white/5">
-                  <Shield className="w-3 h-3 text-primary" />
-                  <span className="font-mono text-xs text-muted-foreground">shield.config.ts</span>
-                </div>
-                <div className="w-8" /> {/* Spacer for centering */}
-              </div>
-
-              {/* Code content */}
-              <div className="p-8 font-mono text-[13px] sm:text-sm leading-relaxed overflow-x-auto">
-                <div className="flex flex-col gap-1">
-                  <div className="text-muted-foreground/50">{'// Initialize Leks AI Sentinel'}</div>
-                  <div className="flex">
-                    <span className="text-purple-400 mr-2">const</span>
-                    <span className="text-blue-400">sentinel</span>
-                    <span className="text-white mx-2">=</span>
-                    <span className="text-purple-400">new</span>
-                    <span className="text-yellow-300 ml-2">SentinelAI</span>
-                    <span className="text-white">({'{'}</span>
+            <div className="relative z-10 animate-float">
+              <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full bg-gradient-to-br from-white/5 to-transparent border border-white/10 backdrop-blur-md flex items-center justify-center ring-1 ring-white/5 shadow-2xl">
+                {/* Inner pulsing circle */}
+                <div className="absolute inset-4 rounded-full border border-primary/20 animate-pulse-gentle" />
+                <div className="absolute inset-8 rounded-full border border-primary/10 border-dashed animate-[spin_10s_linear_infinite]" />
+                
+                {/* Central Shield */}
+                <div className="relative flex flex-col items-center gap-4">
+                  <div className="p-6 rounded-3xl bg-primary/10 border border-primary/20 shadow-[0_0_30px_-5px_hsl(var(--primary)/0.3)]">
+                    <Shield className="w-16 h-16 sm:w-20 sm:h-20 text-primary fill-primary/10" />
                   </div>
-                  <div className="pl-4">
-                    <span className="text-blue-300">mode:</span>
-                    <span className="text-green-400 ml-2">'autonomous'</span>
-                    <span className="text-white">,</span>
+                  <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-black/40 border border-white/5 backdrop-blur-sm">
+                    <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                    <span className="text-xs font-medium text-emerald-500 tracking-wide uppercase">Protected</span>
                   </div>
-                  <div className="pl-4">
-                    <span className="text-blue-300">sensitivity:</span>
-                    <span className="text-orange-400 ml-2">0.99</span>
-                    <span className="text-white">,</span>
-                  </div>
-                  <div className="pl-4">
-                    <span className="text-blue-300">modules:</span>
-                    <span className="text-white ml-2">['threat-intel', 'auto-remediate']</span>
-                  </div>
-                  <div className="text-white">{'}'});</div>
-                  <br />
-                  <div className="text-muted-foreground/50">{'// Watch for real-time anomalies'}</div>
-                  <div className="flex">
-                    <span className="text-blue-400">sentinel</span>
-                    <span className="text-white">.</span>
-                    <span className="text-yellow-300">watch</span>
-                    <span className="text-white">((</span>
-                    <span className="text-orange-300">threat</span>
-                    <span className="text-white">) ={'>'} {'{'}</span>
-                  </div>
-                  <div className="pl-4 group cursor-pointer relative">
-                    <div className="absolute -left-4 top-0 bottom-0 w-1 bg-primary/50 opacity-0 group-hover:opacity-100 transition-opacity" />
-                    <span className="text-purple-400">if</span>
-                    <span className="text-white ml-2">(</span>
-                    <span className="text-orange-300">threat</span>
-                    <span className="text-white">.</span>
-                    <span className="text-blue-300">severity</span>
-                    <span className="text-white mx-2">{'>'}</span>
-                    <span className="text-purple-400">HIGH</span>
-                    <span className="text-white">) {'{'}</span>
-                  </div>
-                  <div className="pl-8 bg-primary/10 -mx-8 px-8 py-1 my-1 border-l-2 border-primary animate-pulse-gentle">
-                    <span className="text-blue-400">await</span>
-                    <span className="text-white mx-2">sentinel.</span>
-                    <span className="text-yellow-300">neutralize</span>
-                    <span className="text-white">(</span>
-                    <span className="text-orange-300">threat</span>
-                    <span className="text-white">);</span>
-                    <span className="text-primary ml-4 opacity-50 font-sans italic text-xs">// Threat neutralized instantly</span>
-                  </div>
-                  <div className="pl-4 text-white">{'}'}</div>
-                  <div className="text-white">{'}'});</div>
                 </div>
               </div>
 
-              {/* Status bar */}
-              <div className="bg-black/40 border-t border-white/5 py-3 px-6 flex items-center justify-between text-xs">
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                  <span className="text-emerald-500 font-medium">System Active</span>
-                </div>
-                <div className="text-muted-foreground">Latency: 4ms</div>
+              {/* Orbiting elements */}
+              <div className="absolute top-0 right-10 p-3 rounded-xl bg-card/80 border border-white/10 backdrop-blur-md shadow-lg animate-bounce-slow">
+                <ShieldCheck className="w-6 h-6 text-emerald-400" />
+              </div>
+              <div className="absolute bottom-10 left-0 p-3 rounded-xl bg-card/80 border border-white/10 backdrop-blur-md shadow-lg animate-bounce-slow delay-700">
+                <Lock className="w-6 h-6 text-blue-400" />
               </div>
             </div>
           </div>
