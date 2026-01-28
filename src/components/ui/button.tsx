@@ -9,14 +9,14 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-cyber hover:shadow-cyber-lg",
+        default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm hover:shadow-md",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border border-primary/30 bg-background hover:bg-primary/10 hover:border-primary/50 hover:shadow-neon",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80 shadow-cyber",
+        outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80 shadow-sm",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        hero: "bg-gradient-to-r from-primary to-secondary text-primary-foreground hover:opacity-90 shadow-cyber-lg hover:shadow-neon font-semibold hover:-translate-y-0.5 border border-primary/20",
-        heroOutline: "border-2 border-primary/30 bg-card text-foreground hover:bg-primary/10 hover:border-primary/50 shadow-cyber hover:shadow-neon font-medium",
+        hero: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg hover:shadow-xl hover:-translate-y-0.5 font-semibold",
+        heroOutline: "border-2 border-primary/20 bg-card text-foreground hover:bg-primary/5 hover:border-primary/40 shadow-sm hover:shadow-md font-medium",
         calm: "bg-accent text-accent-foreground hover:bg-accent/80 border border-border/50",
       },
       size: {
