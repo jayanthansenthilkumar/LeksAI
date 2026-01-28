@@ -10,7 +10,7 @@ const SolutionSection = () => {
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
                 <Shield className="w-4 h-4" />
-                Introducing LeksAI
+                Introducing leks.AI
               </div>
               
               <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6 leading-tight">

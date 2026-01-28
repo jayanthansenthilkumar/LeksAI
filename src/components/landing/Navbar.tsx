@@ -19,7 +19,7 @@ const Navbar = () => {
           <div className="w-9 h-9 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
             <Shield className="w-5 h-5 text-primary" />
           </div>
-          <span className="text-xl font-bold text-foreground">LeksAI</span>
+          <span className="text-xl font-bold text-foreground">leks.AI</span>
         </a>
         
         {/* <div className="hidden md:flex items-center gap-8">

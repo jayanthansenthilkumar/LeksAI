@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className="w-9 h-9 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center">
                   <Shield className="w-5 h-5 text-primary" />
                 </div>
-                <span className="text-xl font-bold text-foreground">LeksAI</span>
+                <span className="text-xl font-bold text-foreground">leks.AI</span>
               </a>
               <p className="text-sm text-muted-foreground text-center md:text-left font-mono">
                 Intelligent defense. Autonomous response.
@@ -38,7 +38,7 @@ const Footer = () => {
 
           <div className="mt-8 pt-8 border-t border-border/50 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-xs text-muted-foreground font-mono">
-              © {new Date().getFullYear()} LeksAI. All rights reserved.
+              © {new Date().getFullYear()} leks.AI. All rights reserved.
             </p>
             <p className="text-xs text-muted-foreground">
               Built with AI at the core. Always learning.

@@ -78,7 +78,7 @@ const HeroSection = () => {
                     <span className="text-muted-foreground/60">03</span>  <span className="text-destructive">-</span> <span className="text-muted-foreground/60">// Traditional: logs keystrokes</span>
                   </div>
                   <div className="code-line-added px-2 -mx-2 rounded">
-                    <span className="text-muted-foreground/60">04</span>  <span className="text-primary">+</span> <span className="text-primary">// SentriQ: analyzes patterns</span>
+                    <span className="text-muted-foreground/60">04</span>  <span className="text-primary">+</span> <span className="text-primary">// leks.AI: analyzes patterns</span>
                   </div>
                   <div><span className="text-muted-foreground/60">05</span></div>
                   <div><span className="text-muted-foreground/60">06</span>  <span className="code-keyword">if</span> (behavior.<span className="text-primary">isAnomalous</span>()) {"{"}</div>

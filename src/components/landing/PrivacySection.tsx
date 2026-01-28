@@ -19,7 +19,7 @@ const privacyFeatures = [
   {
     icon: Eye,
     title: "Transparent Actions",
-    description: "Every action SentriQ takes is logged and explainable. You always know what's happening."
+    description: "Every action leks.AI takes is logged and explainable. You always know what's happening."
   }
 ];
 
@@ -38,7 +38,7 @@ const PrivacySection = () => {
                 Built on Trust, Not Surveillance
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                We believe security and privacy aren't opposites. SentriQ proves you can have 
+                We believe security and privacy aren't opposites. leks.AI proves you can have 
                 world-class protection without compromising personal boundaries.
               </p>
             </div>
