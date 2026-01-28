@@ -29,7 +29,7 @@ const benefits = [
 
 const BenefitsSection = () => {
   return (
-    <section id="benefits" className="py-24 bg-card border-y border-border/50">
+    <section id="benefits" className="py-24 bg-muted/30 border-y border-border/50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-4">
           <span className="text-primary font-mono text-sm">Proven Results</span>
@@ -47,7 +47,7 @@ const BenefitsSection = () => {
           {benefits.map((benefit, index) => (
             <div 
               key={index}
-              className="group text-center p-8 rounded-2xl bg-background border border-border/50 hover:border-primary/30 transition-all duration-300 gradient-border"
+              className="group text-center p-8 rounded-2xl bg-card border border-border/50 hover:border-primary/30 transition-all duration-300 gradient-border"
             >
               <div className="w-16 h-16 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                 <benefit.icon className="w-8 h-8 text-primary" />
