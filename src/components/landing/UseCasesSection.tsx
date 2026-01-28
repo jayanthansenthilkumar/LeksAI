@@ -1,42 +1,59 @@
-import { Briefcase, GraduationCap, Building2, HeartPulse } from "lucide-react";
+import { Briefcase, GraduationCap, Building2, HeartPulse, Check } from "lucide-react";
 
 const useCases = [
   {
     icon: Briefcase,
     title: "Enterprises & Startups",
     description: "Secure remote workforce, prevent insider threats, improve team output without micromanagement.",
-    tag: "Teams"
+    tag: "Teams",
+    color: "text-blue-400",
+    bg: "bg-blue-400/10",
+    borderColor: "hover:border-blue-400/30",
+    features: ["Remote Work Security", "Insider Threat Detection"]
   },
   {
     icon: GraduationCap,
     title: "Educational Institutions",
     description: "Protect student systems, prevent exam & identity fraud, improve learning discipline.",
-    tag: "Education"
+    tag: "Education",
+    color: "text-amber-400",
+    bg: "bg-amber-400/10",
+    borderColor: "hover:border-amber-400/30",
+    features: ["Exam Integrity", "Identity Protection"]
   },
   {
     icon: HeartPulse,
     title: "Healthcare",
     description: "Secure sensitive patient data, prevent unauthorized access, maintain HIPAA compliance effortlessly.",
-    tag: "Healthcare"
+    tag: "Healthcare",
+    color: "text-rose-400",
+    bg: "bg-rose-400/10",
+    borderColor: "hover:border-rose-400/30",
+    features: ["HIPAA Compliance", "Patient Data Security"]
   },
   {
     icon: Building2,
     title: "Finance & Banking",
     description: "Protect financial data, detect insider trading attempts, ensure regulatory compliance.",
-    tag: "Finance"
+    tag: "Finance",
+    color: "text-emerald-400",
+    bg: "bg-emerald-400/10",
+    borderColor: "hover:border-emerald-400/30",
+    features: ["Fraud Prevention", "Regulatory Compliance"]
   }
 ];
 
 const UseCasesSection = () => {
   return (
-    <section id="use-cases" className="py-24 bg-card border-y border-border/50">
+    <section id="use-cases" className="py-24 bg-background relative">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Built For Modern Security Teams
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6">
+            Built For Modern <span className="text-primary">Security Teams</span>
           </h2>
           <p className="text-lg text-muted-foreground">
             From startups to enterprises. API-heavy SaaS to regulated industries.
+            Security that scales with you.
           </p>
         </div>
 
@@ -44,22 +61,38 @@ const UseCasesSection = () => {
           {useCases.map((useCase, index) => (
             <div 
               key={index}
-              className="group relative p-8 rounded-2xl bg-background border border-border/50 hover:border-primary/30 transition-all duration-300 gradient-border"
+              className={`group relative p-8 rounded-3xl bg-card border border-white/5 ${useCase.borderColor} transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 overflow-hidden`}
             >
-              <div className="flex items-center justify-between mb-4">
-                <div className="w-14 h-14 rounded-2xl bg-muted flex items-center justify-center group-hover:bg-primary/10 transition-colors">
-                  <useCase.icon className="w-7 h-7 text-muted-foreground group-hover:text-primary transition-colors" />
-                </div>
-                <span className="px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-medium font-mono">
-                  {useCase.tag}
-                </span>
+              <div className={`absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity duration-300 ${useCase.color}`}>
+                <useCase.icon className="w-32 h-32 -mr-8 -mt-8 rotate-12" />
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-3">
-                {useCase.title}
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                {useCase.description}
-              </p>
+
+              <div className="relative z-10">
+                <div className="flex items-center justify-between mb-6">
+                  <div className={`w-14 h-14 rounded-2xl ${useCase.bg} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
+                    <useCase.icon className={`w-7 h-7 ${useCase.color}`} />
+                  </div>
+                  <span className={`px-3 py-1 rounded-full ${useCase.bg} border border-white/5 ${useCase.color} text-xs font-bold font-mono uppercase tracking-wider`}>
+                    {useCase.tag}
+                  </span>
+                </div>
+                
+                <h3 className="text-2xl font-bold text-foreground mb-3 group-hover:text-white transition-colors">
+                  {useCase.title}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed mb-6 group-hover:text-white/70 transition-colors">
+                  {useCase.description}
+                </p>
+
+                <div className="flex flex-wrap gap-2">
+                  {useCase.features.map((feature, idx) => (
+                    <div key={idx} className="flex items-center gap-1.5 text-xs text-muted-foreground bg-white/5 px-2.5 py-1 rounded-md">
+                      <Check className={`w-3 h-3 ${useCase.color}`} />
+                      {feature}
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           ))}
         </div>
