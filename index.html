@@ -17,51 +17,10 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@Lovable" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-    
-    <style>
-      /* Cyber loading animation */
-      #cyber-loader {
-        position: fixed;
-        inset: 0;
-        background: hsl(240 10% 3%);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 9999;
-        opacity: 1;
-        transition: opacity 0.5s ease-out;
-      }
-      #cyber-loader.hidden {
-        opacity: 0;
-        pointer-events: none;
-      }
-      .cyber-spinner {
-        width: 60px;
-        height: 60px;
-        border: 3px solid rgba(0, 255, 255, 0.1);
-        border-top-color: rgba(0, 255, 255, 0.8);
-        border-radius: 50%;
-        animation: spin 1s linear infinite;
-        box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
-      }
-      @keyframes spin {
-        to { transform: rotate(360deg); }
-      }
-    </style>
   </head>
 
   <body>
-    <div id="cyber-loader">
-      <div class="cyber-spinner"></div>
-    </div>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <script>
-      window.addEventListener('load', () => {
-        setTimeout(() => {
-          document.getElementById('cyber-loader').classList.add('hidden');
-        }, 500);
-      });
-    </script>
   </body>
 </html>
