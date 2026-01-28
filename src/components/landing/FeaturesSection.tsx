@@ -41,6 +41,7 @@ const features = [
 
 const FeaturesSection = () => {
   return (
+<<<<<<< HEAD
     <section id="features" className="py-24 bg-background relative">
       <div className="container mx-auto px-6">
         <div className="flex flex-col items-center text-center mb-16">
@@ -52,6 +53,17 @@ const FeaturesSection = () => {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6 max-w-2xl">
             AI-Native Security <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/60">Built for Speed</span>
+=======
+    <section id="features" className="py-24 bg-card border-y border-primary/20 relative overflow-hidden">
+      <div className="absolute inset-0 cyber-grid opacity-20" />
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="text-center mb-4">
+          <span className="text-primary font-cyber text-sm tracking-wider">THE "WHAT"</span>
+        </div>
+        <div className="max-w-3xl mx-auto text-center mb-16">
+          <h2 className="text-3xl sm:text-4xl font-cyber font-bold text-gradient mb-4">
+            AI-Native Security Features
+>>>>>>> parent of 8a5049e (Finalized Landing Page)
           </h2>
           
           <p className="text-lg text-muted-foreground max-w-2xl">
@@ -64,6 +76,7 @@ const FeaturesSection = () => {
           {features.map((feature, index) => (
             <div 
               key={index}
+<<<<<<< HEAD
               className="group relative p-8 rounded-3xl bg-card border border-white/5 hover:border-white/10 overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1"
             >
               <div className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
@@ -83,6 +96,19 @@ const FeaturesSection = () => {
                   {feature.description}
                 </p>
               </div>
+=======
+              className="group p-8 rounded-2xl bg-background border border-primary/30 hover:border-primary hover:shadow-cyber-lg hover:-translate-y-1 transition-all duration-300 cyber-border"
+            >
+              <div className="w-14 h-14 rounded-2xl bg-primary/10 border border-primary/30 flex items-center justify-center mb-5 group-hover:bg-primary/20 group-hover:shadow-neon transition-all">
+                <feature.icon className="w-7 h-7 text-primary" />
+              </div>
+              <h3 className="text-xl font-cyber font-semibold text-foreground mb-3">
+                {feature.title}
+              </h3>
+              <p className="text-muted-foreground leading-relaxed">
+                {feature.description}
+              </p>
+>>>>>>> parent of 8a5049e (Finalized Landing Page)
             </div>
           ))}
         </div>
