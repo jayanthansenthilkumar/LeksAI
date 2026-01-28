@@ -16,6 +16,7 @@ export default {
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
         mono: ['JetBrains Mono', 'monospace'],
+        cyber: ['Orbitron', 'Inter', 'system-ui', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -61,6 +62,12 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        cyber: {
+          cyan: "hsl(190 95% 55%)",
+          purple: "hsl(265 85% 65%)",
+          pink: "hsl(320 90% 60%)",
+          blue: "hsl(220 90% 60%)",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -68,6 +75,11 @@ export default {
         sm: "calc(var(--radius) - 4px)",
         xl: "calc(var(--radius) + 4px)",
         "2xl": "calc(var(--radius) + 8px)",
+      },
+      boxShadow: {
+        'cyber': '0 0 20px hsl(190 95% 55% / 0.3), 0 0 40px hsl(265 85% 65% / 0.2)',
+        'cyber-lg': '0 0 40px hsl(190 95% 55% / 0.4), 0 0 60px hsl(265 85% 65% / 0.3)',
+        'neon': '0 0 5px hsl(var(--primary)), 0 0 10px hsl(var(--primary)), 0 0 20px hsl(var(--primary))',
       },
       keyframes: {
         "accordion-down": {
@@ -78,10 +90,32 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        scan: {
+          '0%': { top: '0', opacity: '0' },
+          '10%': { opacity: '0.6' },
+          '90%': { opacity: '0.6' },
+          '100%': { top: '100%', opacity: '0' },
+        },
+        glitch: {
+          '0%, 100%': { transform: 'translate(0)' },
+          '33%': { transform: 'translate(-2px, 2px)' },
+          '66%': { transform: 'translate(2px, -2px)' },
+        },
+        pulse_glow: {
+          '0%, 100%': { 
+            boxShadow: '0 0 20px hsl(190 95% 55% / 0.3), 0 0 40px hsl(265 85% 65% / 0.2)' 
+          },
+          '50%': { 
+            boxShadow: '0 0 40px hsl(190 95% 55% / 0.5), 0 0 60px hsl(265 85% 65% / 0.3)' 
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "scan": "scan 4s linear infinite",
+        "glitch": "glitch 0.3s ease-in-out infinite",
+        "pulse-glow": "pulse_glow 3s ease-in-out infinite",
       },
     },
   },

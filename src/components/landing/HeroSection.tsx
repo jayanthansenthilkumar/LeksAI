@@ -7,18 +7,20 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 hero-gradient" />
+      <div className="absolute inset-0 cyber-grid opacity-30" />
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-float" />
-        <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-primary/3 rounded-full blur-3xl animate-float-delayed" />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float" />
+        <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-secondary/10 rounded-full blur-3xl animate-float-delayed" />
+        <div className="absolute top-1/2 left-1/2 w-[300px] h-[300px] bg-accent/5 rounded-full blur-3xl animate-pulse-glow" />
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left content */}
           <div className="animate-fade-up">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-foreground leading-[1.1] mb-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-cyber font-extrabold text-foreground leading-[1.1] mb-6">
               AI-Powered{" "}
-              <span className="text-gradient">Threat Intelligence</span>
+              <span className="text-gradient animate-pulse-glow">Threat Intelligence</span>
               {" "}& Autonomous Response
             </h1>
 
@@ -31,7 +33,7 @@ const HeroSection = () => {
               <Input 
                 type="email" 
                 placeholder="Enter your work email"
-                className="h-12 bg-card border-border/50 text-foreground placeholder:text-muted-foreground focus:border-primary/50"
+                className="h-12 bg-card border-primary/30 text-foreground placeholder:text-muted-foreground focus:border-primary focus:shadow-neon transition-all"
               />
               <Button variant="hero" size="lg" className="shrink-0">
                 Join Waitlist
@@ -58,15 +60,15 @@ const HeroSection = () => {
 
           {/* Right visual - Code block style */}
           <div className="animate-fade-up-delayed">
-            <div className="code-block rounded-2xl overflow-hidden card-glow">
+            <div className="code-block rounded-2xl overflow-hidden card-glow cyber-border scan-line">
               {/* Window header */}
-              <div className="flex items-center gap-2 px-4 py-3 border-b border-border/50">
+              <div className="flex items-center gap-2 px-4 py-3 border-b border-primary/30 bg-card/50">
                 <div className="flex gap-2">
-                  <div className="w-3 h-3 rounded-full bg-destructive/60" />
-                  <div className="w-3 h-3 rounded-full code-warning-dot" />
-                  <div className="w-3 h-3 rounded-full bg-primary/60" />
+                  <div className="w-3 h-3 rounded-full bg-destructive/60 animate-pulse" />
+                  <div className="w-3 h-3 rounded-full code-warning-dot animate-pulse" style={{animationDelay: '0.3s'}} />
+                  <div className="w-3 h-3 rounded-full bg-primary/60 animate-pulse" style={{animationDelay: '0.6s'}} />
                 </div>
-                <span className="ml-4 font-mono text-xs text-muted-foreground">security.monitor</span>
+                <span className="ml-4 font-mono text-xs text-primary">security.monitor</span>
               </div>
 
               {/* Code content */}
@@ -87,12 +89,12 @@ const HeroSection = () => {
                 </div>
 
                 {/* Insight box */}
-                <div className="mt-6 p-4 rounded-xl bg-primary/10 border border-primary/20">
+                <div className="mt-6 p-4 rounded-xl bg-primary/10 border border-primary/30 shadow-cyber">
                   <div className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                    <Check className="w-5 h-5 text-primary shrink-0 mt-0.5 animate-pulse" />
                     <div>
                       <div className="text-sm"><span className="text-primary font-medium">Insight:</span> <span className="text-foreground">Unusual login pattern detected.</span></div>
-                      <div className="text-sm"><span className="text-primary font-medium">Action:</span> <span className="text-muted-foreground">Session secured silently.</span></div>
+                      <div className="text-sm"><span className="text-secondary font-medium">Action:</span> <span className="text-muted-foreground">Session secured silently.</span></div>
                     </div>
                   </div>
                 </div>

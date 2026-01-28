@@ -41,13 +41,14 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section id="features" className="py-24 bg-card border-y border-border/50">
-      <div className="container mx-auto px-6">
+    <section id="features" className="py-24 bg-card border-y border-primary/20 relative overflow-hidden">
+      <div className="absolute inset-0 cyber-grid opacity-20" />
+      <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-4">
-          <span className="text-primary font-mono text-sm">The "What"</span>
+          <span className="text-primary font-cyber text-sm tracking-wider">THE "WHAT"</span>
         </div>
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl sm:text-4xl font-cyber font-bold text-gradient mb-4">
             AI-Native Security Features
           </h2>
           <p className="text-lg text-muted-foreground">
@@ -59,12 +60,12 @@ const FeaturesSection = () => {
           {features.map((feature, index) => (
             <div 
               key={index}
-              className="group p-8 rounded-2xl bg-background border border-border/50 hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 gradient-border"
+              className="group p-8 rounded-2xl bg-background border border-primary/30 hover:border-primary hover:shadow-cyber-lg hover:-translate-y-1 transition-all duration-300 cyber-border"
             >
-              <div className="w-14 h-14 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
+              <div className="w-14 h-14 rounded-2xl bg-primary/10 border border-primary/30 flex items-center justify-center mb-5 group-hover:bg-primary/20 group-hover:shadow-neon transition-all">
                 <feature.icon className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-3">
+              <h3 className="text-xl font-cyber font-semibold text-foreground mb-3">
                 {feature.title}
               </h3>
               <p className="text-muted-foreground leading-relaxed">
