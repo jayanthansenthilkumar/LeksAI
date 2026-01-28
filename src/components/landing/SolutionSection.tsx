@@ -10,18 +10,18 @@ const SolutionSection = () => {
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
                 <Shield className="w-4 h-4" />
-                Introducing SentriQ
+                Introducing LeksAI
               </div>
               
               <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6 leading-tight">
-                One System, Dual Intelligence:
+                The World's First:
                 <br />
-                <span className="text-gradient">Productivity + Cyber Security</span>
+                <span className="text-gradient">Fully Autonomous SOC Platform</span>
               </h2>
               
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                SentriQ learns how you work—login times, typing rhythm, app switching, task habits—then uses 
-                the same behavioral data to boost efficiency AND detect threats. No spying. No content reading.
+                AI agents that detect, investigate, and respond to threats without human intervention. 
+                Behavioral ML learns your environment. Explainable AI keeps you in control.
               </p>
 
               <div className="space-y-5">
@@ -30,9 +30,9 @@ const SolutionSection = () => {
                     <Eye className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1">Real-Time Behavior Intelligence</h4>
+                    <h4 className="font-semibold text-foreground mb-1">Predictive Threat Detection</h4>
                     <p className="text-muted-foreground text-sm">
-                      Learns normal patterns: login times, typing rhythm, app flow, task habits. Only signals, not content.
+                      ML models analyze network, endpoint, and cloud behavior. Catches zero-days before first exploit.
                     </p>
                   </div>
                 </div>
@@ -42,9 +42,9 @@ const SolutionSection = () => {
                     <Shield className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1">Instant Threat Detection</h4>
+                    <h4 className="font-semibold text-foreground mb-1">Intelligent Alert Reduction</h4>
                     <p className="text-muted-foreground text-sm">
-                      Spots account takeover, session hijacking, insider threats, and bot activity—before damage occurs.
+                      Context-aware AI scores threats by business impact. Only critical alerts reach your team.
                     </p>
                   </div>
                 </div>
@@ -54,9 +54,9 @@ const SolutionSection = () => {
                     <Heart className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1">Smart Response Engine</h4>
+                    <h4 className="font-semibold text-foreground mb-1">Autonomous Incident Response</h4>
                     <p className="text-muted-foreground text-sm">
-                      Silent re-auth, session locks, data masking, admin alerts—all automatic. No panic, no disruption.
+                      Pre-approved playbooks execute automatically. Isolate threats in milliseconds, not hours.
                     </p>
                   </div>
                 </div>

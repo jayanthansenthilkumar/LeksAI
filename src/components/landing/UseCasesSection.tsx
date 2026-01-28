@@ -33,10 +33,10 @@ const UseCasesSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Who Benefits
+            Built For Modern Security Teams
           </h2>
           <p className="text-lg text-muted-foreground">
-            Horizontal value with vertical depth. From startups to healthcare to finance.
+            From startups to enterprises. API-heavy SaaS to regulated industries.
           </p>
         </div>
 

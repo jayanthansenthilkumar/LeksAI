@@ -12,10 +12,10 @@ const Footer = () => {
                 <div className="w-9 h-9 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center">
                   <Shield className="w-5 h-5 text-primary" />
                 </div>
-                <span className="text-xl font-bold text-foreground">SentriQ</span>
+                <span className="text-xl font-bold text-foreground">LeksAI</span>
               </a>
               <p className="text-sm text-muted-foreground text-center md:text-left font-mono">
-                Security that respects your privacy.
+                Intelligent defense. Autonomous response.
               </p>
             </div>
 
@@ -38,10 +38,10 @@ const Footer = () => {
 
           <div className="mt-8 pt-8 border-t border-border/50 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-xs text-muted-foreground font-mono">
-              © {new Date().getFullYear()} SentriQ. All rights reserved.
+              © {new Date().getFullYear()} LeksAI. All rights reserved.
             </p>
             <p className="text-xs text-muted-foreground">
-              Built with privacy at our core. We never compromise.
+              Built with AI at the core. Always learning.
             </p>
           </div>
         </div>

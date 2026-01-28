@@ -4,26 +4,26 @@ const steps = [
   {
     number: "01",
     icon: Eye,
-    title: "Real-Time Behavior Observation",
-    description: "SentriQ learns normal patterns: login times, device usage, typing rhythm, app switching, task habits. No spying. No content reading."
+    title: "Unified Data Collection",
+    description: "Ingest logs from network, endpoint, cloud, and APIs. Kafka streams process 1M+ events/sec in real-time."
   },
   {
     number: "02",
     icon: Brain,
-    title: "AI Productivity Intelligence",
-    description: "Detects distraction loops, reorders tasks dynamically, suggests focus windows, auto-summarizes sessions, and flags overload."
+    title: "AI Model Inference",
+    description: "Behavioral ML detects anomalies. LSTMs analyze sequences. Graph Neural Networks map attack patterns."
   },
   {
     number: "03",
     icon: Shield,
-    title: "Embedded Cyber Security Intelligence",
-    description: "The same behavior data detects threats: account takeover, session hijacking, insider misuse, credential sharing, bot activity."
+    title: "Intelligent Triage & Context",
+    description: "AI scores threats by business impact. Enriches alerts with MITRE ATT&CK mappings and threat intel."
   },
   {
     number: "04",
     icon: Heart,
-    title: "Real-Time Response Engine",
-    description: "Silent re-authentication, session locks, data masking, admin alerts, safe next-action recommendations. Security feels invisible."
+    title: "Automated Response",
+    description: "Execute playbooks via SOAR. Isolate endpoints, block IPs, revoke tokens—all in <1 second."
   }
 ];
 
@@ -33,10 +33,10 @@ const HowItWorksSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Simple but Powerful Flow
+            AI-Powered Detection Pipeline
           </h2>
           <p className="text-lg text-muted-foreground">
-            From observation to protection—all in real-time, all invisible.
+            From data ingestion to threat neutralization—all automated, all explainable.
           </p>
         </div>
 

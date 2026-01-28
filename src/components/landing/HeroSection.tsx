@@ -17,14 +17,13 @@ const HeroSection = () => {
           {/* Left content */}
           <div className="animate-fade-up">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-foreground leading-[1.1] mb-6">
-              Your Digital Conscience:{" "}
-              <span className="text-gradient">Boost Productivity</span>
-              {" "}& Protect Trust
+              AI-Powered{" "}
+              <span className="text-gradient">Threat Intelligence</span>
+              {" "}& Autonomous Response
             </h1>
 
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed max-w-lg">
-              Real-time AI that improves focus and efficiency while silently guarding against cyber threats. 
-              Watches how you work—not what you work on.
+              Stop threats before they happen. Cut alert fatigue by 90%. Let AI handle the noise while your team focuses on what matters.
             </p>
 
             {/* Email signup */}
@@ -44,7 +43,7 @@ const HeroSection = () => {
             <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <Check className="w-4 h-4 text-primary" />
-                <span>Behavior-only monitoring</span>
+                <span>90% Fewer Alerts</span>
               </div>
               <div className="flex items-center gap-2">
                 <Check className="w-4 h-4 text-primary" />

@@ -2,24 +2,24 @@ import { Brain, ShieldAlert, Clock, AlertTriangle } from "lucide-react";
 
 const problems = [
   {
-    icon: Brain,
-    title: "10+ Apps, Constant Juggling",
-    description: "Users lose focus switching between tools, logins, and devices—productivity suffers silently."
+    icon: AlertTriangle,
+    title: "Alert Fatigue Overload",
+    description: "SOC teams drown in 10,000+ daily alerts. 95% are false positives. Critical threats get buried."
   },
   {
     icon: Clock,
-    title: "Security Tools Are Reactive",
-    description: "Traditional systems detect threats after damage is done. Logs → analysis → alerts = too late."
+    title: "200-Day Detection Gap",
+    description: "Average breach takes 200+ days to detect. Attackers move freely while you're blind."
+  },
+  {
+    icon: Brain,
+    title: "Critical Skills Shortage",
+    description: "Can't hire enough cybersecurity talent. Junior analysts can't handle sophisticated threats."
   },
   {
     icon: ShieldAlert,
-    title: "Productivity vs. Security",
-    description: "Productivity tools ignore cyber risks. Cyber tools ignore human behavior. The gap is costly."
-  },
-  {
-    icon: AlertTriangle,
-    title: "Silent Breaches + Burnout",
-    description: "Account takeovers and insider threats go unnoticed while employees experience constant pressure."
+    title: "Zero-Day Blindness",
+    description: "Signature-based tools fail against novel attacks. APIs and cloud environments create blind spots."
   }
 ];
 
@@ -29,11 +29,11 @@ const ProblemSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            The Productivity-Security Gap
+            The Modern SOC Crisis
           </h2>
           <p className="text-lg text-muted-foreground">
-            Productivity loss + silent breaches + burnout + delayed detection. 
-            SentriQ merges productivity intelligence and cyber intelligence into one real-time system.
+            Too many alerts. Not enough analysts. Threats move faster than humans can respond. 
+            Traditional security creates more problems than it solves.
           </p>
         </div>
 

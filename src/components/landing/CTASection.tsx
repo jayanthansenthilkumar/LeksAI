@@ -23,14 +23,14 @@ const CTASection = () => {
               </div>
 
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-                Observe. Guide. Protect.
+                Stop Breaches.
                 <br />
-                <span className="text-gradient">Act Instantly.</span>
+                <span className="text-gradient">Let AI Take the Wheel.</span>
               </h2>
 
               <p className="text-lg text-muted-foreground max-w-xl mx-auto mb-10">
-                Join the future of work where productivity and security aren't trade-offs—they're teammates. 
-                Start your journey to scalable, unbiased supervision today.
+                Join 500+ security teams using AI to detect threats 90% faster. 
+                Get autonomous threat detection running in 24 hours.
               </p>
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
@@ -46,7 +46,7 @@ const CTASection = () => {
               </div>
 
               <p className="mt-8 text-sm text-muted-foreground font-mono">
-                No credit card required • 14-day free trial • Cancel anytime
+                No credit card required • Deploy in 24 hours • SOC2 compliant
               </p>
             </div>
           </div>

@@ -2,40 +2,40 @@ import { Focus, Brain, Fingerprint, ShieldCheck, Lock, AlertTriangle } from "luc
 
 const features = [
   {
-    icon: Focus,
-    title: "Live Task Prioritization",
-    description: "AI reorders your work dynamically based on behavior patterns and deadlines.",
-    category: "productivity"
-  },
-  {
     icon: Brain,
-    title: "Smart Focus Nudges",
-    description: "Detects distraction loops and suggests focus windows to maximize deep work.",
-    category: "productivity"
+    title: "AI Threat Hunter",
+    description: "Behavioral anomaly detection using ML. Predicts attacks before they happen with explainable AI.",
+    category: "detection"
   },
   {
     icon: AlertTriangle,
-    title: "Burnout & Fatigue Alerts",
-    description: "Flags overload and recommends breaks before productivity crashes.",
-    category: "productivity"
-  },
-  {
-    icon: Fingerprint,
-    title: "Behavioral Anomaly Detection (UEBA)",
-    description: "Identifies account takeover, session hijacking, and insider threats instantly.",
-    category: "security"
+    title: "Smart Alert Triage",
+    description: "Reduces alerts by 90%. AI-powered prioritization with business context. Eliminates false positives.",
+    category: "detection"
   },
   {
     icon: ShieldCheck,
-    title: "Zero-Trust Continuous Auth",
-    description: "Silently verifies identity based on behavior—no constant password prompts.",
-    category: "security"
+    title: "Autonomous Response",
+    description: "Automatic containment in <1 second. Self-healing for common attacks. Human-in-loop for critical decisions.",
+    category: "response"
+  },
+  {
+    icon: Focus,
+    title: "Conversational Security",
+    description: "Chat-based interface powered by LLMs. Query all security data in natural language.",
+    category: "interface"
   },
   {
     icon: Lock,
-    title: "Real-Time Data Leak Prevention",
-    description: "Monitors behavioral signals to prevent unauthorized data access and exfiltration.",
-    category: "security"
+    title: "API Security Shield",
+    description: "Real-time API traffic analysis. Detects credential stuffing, injection attacks, shadow APIs.",
+    category: "protection"
+  },
+  {
+    icon: Fingerprint,
+    title: "Vulnerability Intelligence",
+    description: "Predicts which CVEs will be exploited next. Auto-prioritizes based on exploitability.",
+    category: "intelligence"
   }
 ];
 
@@ -48,10 +48,10 @@ const FeaturesSection = () => {
         </div>
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Product + Security Combined
+            AI-Native Security Features
           </h2>
           <p className="text-lg text-muted-foreground">
-            One system that improves your workflow while protecting your trust.
+            From detection to response—all powered by machine learning and automation.
           </p>
         </div>
 

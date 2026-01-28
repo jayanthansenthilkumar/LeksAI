@@ -9,7 +9,7 @@ const Navbar = () => {
         <div className="container mx-auto px-6 flex items-center justify-center gap-2">
           <Sparkles className="w-4 h-4 text-primary flex-shrink-0" />
           <span className="text-xs sm:text-sm text-primary font-medium text-center">
-            Real-time AI productivity + cybersecurity in one system
+            AI-powered autonomous threat intelligence & response
           </span>
         </div>
       </div>
@@ -19,7 +19,7 @@ const Navbar = () => {
           <div className="w-9 h-9 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
             <Shield className="w-5 h-5 text-primary" />
           </div>
-          <span className="text-xl font-bold text-foreground">SentriQ</span>
+          <span className="text-xl font-bold text-foreground">LeksAI</span>
         </a>
         
         {/* <div className="hidden md:flex items-center gap-8">
